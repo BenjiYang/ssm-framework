@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+<!--    &lt;!&ndash; 配置数据源，交给Spring去做 &ndash;&gt; -->
+<!--    &lt;!&ndash;    引入外部数据库连接信息属性文件， 外部属性文件的变量引用方式，如：${driver}&ndash;&gt;-->
+<!--    <properties resource="database.properties"></properties>-->
+
+    <typeAliases>
+        <package name="com.kuang.pojo"/>
+    </typeAliases>
+    <mappers>
+        <!-- Option 1 -->
+        <mapper resource="com/kuang/dao/BookMapper.xml"/>
+        <!-- Option 2 -->
+<!--        <mapper class="com.kuang.dao.BookMapper.xml"/>-->
+    </mappers>
+
+</configuration>
