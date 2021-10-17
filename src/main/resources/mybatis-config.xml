@@ -5,9 +5,13 @@
 
 <configuration>
 
-<!--    &lt;!&ndash; 配置数据源，交给Spring去做 &ndash;&gt; -->
-<!--    &lt;!&ndash;    引入外部数据库连接信息属性文件， 外部属性文件的变量引用方式，如：${driver}&ndash;&gt;-->
-<!--    <properties resource="database.properties"></properties>-->
+    <!-- 配置数据源，交给Spring去做 -->
+    <!--    引入外部数据库连接信息属性文件， 外部属性文件的变量引用方式，如：${driver}-->
+    <!--<properties resource="database.properties"></properties>-->
+
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
 
     <typeAliases>
         <package name="com.kuang.pojo"/>

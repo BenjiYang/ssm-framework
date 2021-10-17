@@ -35,7 +35,6 @@ public class BookController {
     // 添加书籍到请求
     @RequestMapping("/addBook")
     public String addBook(Books books) {
-        System.out.println("addBook=>" + books);
         bookService.addBook(books);
         return "redirect:/book/allBook";  // 重定向到 @RequestMapping("/allBook") 请求；
     }
@@ -51,24 +50,14 @@ public class BookController {
     // 修改书籍
     @RequestMapping("/updateBook")
     public String updateBook(Books books) {
-        int i = bookService.updateBook(books);
-        if (i>0) {
-            System.out.println("修改books成功" + books);
-        } else {
-            System.out.println("修改books失败" + books);
-        }
+        bookService.updateBook(books);
         return "redirect:/book/allBook";
     }
 
     // 删除书籍
     @RequestMapping("/deleteBook")
     public String deleteBook(int id) {
-        int i = bookService.deleteBookById(id);
-        if (i>0) {
-            System.out.println("删除books成功" + id);
-        } else {
-            System.out.println("删除books失败" + id);
-        }
+        bookService.deleteBookById(id);
         return "redirect:/book/allBook";
     }
 }
