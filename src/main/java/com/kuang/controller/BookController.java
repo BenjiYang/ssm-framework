@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
@@ -61,8 +62,8 @@ public class BookController {
     }
 
     // 删除书籍
-    @RequestMapping("/deleteBook")
-    public String deleteBook(int id) {
+    @RequestMapping("/deleteBook/{bookId}")
+    public String deleteBook(@PathVariable("bookId") int id) {
         int i = bookService.deleteBookById(id);
         if (i>0) {
             System.out.println("删除books成功" + id);
