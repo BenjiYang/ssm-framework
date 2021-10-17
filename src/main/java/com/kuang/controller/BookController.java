@@ -40,4 +40,24 @@ public class BookController {
         return "redirect:/book/allBook";  // 重定向到 @RequestMapping("/allBook") 请求；
     }
 
+    // 跳转到修改页面
+    @RequestMapping("/toUpdate")
+    public String toUpdate(int id, Model model) {
+        Books book = bookService.queryBookById(id);
+        model.addAttribute("QBook", book);
+        return "updateBook";
+    }
+
+    // 修改书籍
+    @RequestMapping("/updateBook")
+    public String updateBook(Books books) {
+        System.out.println("updateBook=>" + books);
+        int i = bookService.updateBook(books);
+        if (i>0) {
+            System.out.println("修改books成功" + books);
+        } else {
+            System.out.println("修改books失败" + books);
+        }
+        return "redirect:/book/allBook";
+    }
 }
