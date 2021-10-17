@@ -17,7 +17,7 @@
     <context:component-scan base-package="com.kuang.service"/>
 
     <!-- 2. 将我们所有的service业务类，注入到spring，可以通过配置，或者注解实现 -->
-    <bean id="BookServiceImpl" class="com.kuang.service.BookServiceImpl">
+    <bean id="bookServiceImpl" class="com.kuang.service.BookServiceImpl">
         <property name="bookMapper" ref="bookMapper"/>
     </bean>
 

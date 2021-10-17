@@ -15,7 +15,7 @@ import java.util.List;
 public class BookController {
     // controller层调service层
     @Autowired
-    @Qualifier("BookServiceImpl")
+    @Qualifier("bookServiceImpl")
     private BookService bookService;
 
     // 查询全部书籍，并且返回一个书籍展示页面

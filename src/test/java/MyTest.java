@@ -8,7 +8,7 @@ public class MyTest {
     @Test
     public void test() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        BookService bookServiceImpl = (BookService) context.getBean("BookServiceImpl");
+        BookService bookServiceImpl = (BookService) context.getBean("bookServiceImpl");
         for (Books books: bookServiceImpl.queryAllBook()) {
             System.out.println(books);
         }
