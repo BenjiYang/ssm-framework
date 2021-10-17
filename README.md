@@ -30,6 +30,7 @@ VALUES (1, 'Java', 1, '从入门到放弃'),
        (3, 'Linux', 5, '从进门到进牢');                       
 ```
  Ref: 
- https://www.bilibili.com/video/BV1aE41167Tu?p=18&spm_id_from=pageDriver (Mybatis)
- https://www.bilibili.com/video/BV1aE41167Tu?p=19&spm_id_from=pageDriver (Spring)
- https://www.bilibili.com/video/BV1aE41167Tu?p=20&spm_id_from=pageDriver (SpringMVC)
+ * [P3 - Tomcat setup](https://www.bilibili.com/video/BV1aE41167Tu?p=3&spm_id_from=pageDriver) (Tomcat setup: https://www.jianshu.com/p/8b49a110d878, chmod a+x /path/to/tomcat/bin/catalina.sh)
+ * [P18 - Mybatis](https://www.bilibili.com/video/BV1aE41167Tu?p=18&spm_id_from=pageDriver)
+ * [P19 - Spring](https://www.bilibili.com/video/BV1aE41167Tu?p=19&spm_id_from=pageDriver)
+ * [P20 - SpringMVC](https://www.bilibili.com/video/BV1aE41167Tu?p=20&spm_id_from=pageDriver)   ([org.apache.catalina.core.StandardContext.filterStart 启动过滤器异常](https://blog.csdn.net/qq_41132565/article/details/111415274))
