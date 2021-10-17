@@ -24,6 +24,15 @@
             <div class="col-md-4 column">
                 <%-- to add book --%>
                 <a class="btn btn-primary" href="${pageContext.request.contextPath}/book/toAddBook">新增书籍</a>
+                <a class="btn btn-primary" href="${pageContext.request.contextPath}/book/allBook">显示全部书籍</a>
+            </div>
+            <div class="col-md-8 column">
+                <%-- 查询书籍 --%>
+                <form class="form-inline" action="${pageContext.request.contextPath}/book/queryBook" method="post" style="float: right">
+                    <span style="color: #ff0000; font-weight: bold">${error}</span>
+                    <input type="text" placeholder="请输入要查询的书籍名称" name="queryBookName" required>  <%-- queryBookName 作为参数传入到controller--%>
+                    <input type="submit" class="btn btn-primary" value="查询">
+                </form>
             </div>
         </div>
     </div>

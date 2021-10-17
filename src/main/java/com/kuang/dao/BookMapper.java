@@ -19,6 +19,9 @@ public interface BookMapper {
     // 查询一本书
     Books queryBookById(@Param("bookId") int id);
 
+    // 查询一本书：数名
+    Books queryBookByName(@Param("bookName") String name);
+
     // 查询全部的书
     List<Books> queryAllBook();
 }

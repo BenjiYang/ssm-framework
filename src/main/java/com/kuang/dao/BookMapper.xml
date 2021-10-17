@@ -21,6 +21,10 @@
         SELECT * FROM ssmbuild.books WHERE bookID=#{bookId};
     </select>
 
+    <select id="queryBookByName" parameterType="String" resultType="Books">
+        SELECT * FROM ssmbuild.books WHERE bookName=#{bookName};
+    </select>
+
     <select id="queryAllBook" resultType="Books">
         SELECT * FROM ssmbuild.books;
     </select>
