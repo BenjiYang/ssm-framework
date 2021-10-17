@@ -51,12 +51,23 @@ public class BookController {
     // 修改书籍
     @RequestMapping("/updateBook")
     public String updateBook(Books books) {
-        System.out.println("updateBook=>" + books);
         int i = bookService.updateBook(books);
         if (i>0) {
             System.out.println("修改books成功" + books);
         } else {
             System.out.println("修改books失败" + books);
+        }
+        return "redirect:/book/allBook";
+    }
+
+    // 删除书籍
+    @RequestMapping("/deleteBook")
+    public String deleteBook(int id) {
+        int i = bookService.deleteBookById(id);
+        if (i>0) {
+            System.out.println("删除books成功" + id);
+        } else {
+            System.out.println("删除books失败" + id);
         }
         return "redirect:/book/allBook";
     }
