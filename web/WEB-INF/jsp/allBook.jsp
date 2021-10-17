@@ -32,10 +32,12 @@
         <div class="col-md-12 column">
             <table class="table table-hover table-striped">
                 <thead>
-                    <tr>书籍编号</tr>
-                    <tr>书籍名称</tr>
-                    <tr>书籍数量</tr>
-                    <tr>书籍详情</tr>
+                    <tr>
+                        <th>书籍编号</th>
+                        <th>书籍名称</th>
+                        <th>书籍数量</th>
+                        <th>书籍详情</th>
+                    </tr>
                 </thead>
 
                 <tbody>
