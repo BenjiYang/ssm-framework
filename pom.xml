@@ -72,6 +72,12 @@
             <artifactId>spring-jdbc</artifactId>
             <version>5.1.9.RELEASE</version>
         </dependency>
+        <!-- 引入jackson作为json解析，记得更新tomcat依赖重新部署 -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.11.4</version>
+        </dependency>
         <!-- 偷懒使用lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
